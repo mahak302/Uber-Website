@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBER</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/732/732135.png">
+
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main{
+
+            width: 100%;
+            height: 66px;
+            background: black;
+
+        }
+
+        .uber{
+            color: white;
+            font-size: 23px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            margin-left: 85px;
+           margin-top: 25px;
+        }
+
+        .a1{
+            color: white;
+            text-decoration: none;
+             font-family: Arial, Helvetica, sans-serif;
+             font-size: 14px;
+
+        }
+
+      
+
+
+        .li1{
+            display: inline;
+            margin: 8px;
+        }
+
+        #ul1{
+            position: absolute;
+            margin-left: 200px;
+            margin-top: 26px;
+        }
+        #ul2{
+            position: absolute;
+            margin-left: 1100px;
+            margin-top:26px ;
+
+        }
+        #bt{
+            background-color:white;
+            color: black;
+            height: 40px;
+            width: 80px;
+            border-radius: 23px;
+            position: absolute;
+           margin-left: 15px;
+           margin-top: -10px;
+           
+        }
+        #content{
+            margin-top: 100px;
+            margin-left:60px ;
+            font-size: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #go{
+          text-align: center;
+          font-size: 44px;
+          position: absolute;
+          margin-top: 21px;
+         margin-left: 162px;
+          font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif  ;
+          font-weight: 800;
+        }
+
+        #content{
+            /* border: 2px solid black; */
+           width: 731px;
+           height: 203px;
+            position: absolute;
+            margin-left: 500px;
+           margin-top: 8px;
+           margin-left: 364px;
+        }
+        /* #in{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: -20px;
+            font-size: 20px;
+            font-weight: 600;
+        } */
+        .on{
+            position: absolute;
+           margin-top: 138px;
+           margin-left: -310px;
+            width: 299px;
+            height: 53px;  
+            background-color:rgba(128, 128, 128, 0.388);
+          padding-left: 50px;
+          font-size: 20px;
+          border: none;
+          border-radius: 10px;
+
+            
+        }
+        .on::placeholder{
+            color: black;
+            font-size: 20px;
+            
+        }
+        .as::placeholder{
+              color: black;
+            font-size: 20px;
+
+        }
+        .as{
+             position:absolute;
+           margin-top: 200px;
+           margin-left: 17px;
+         margin-top: 140px;
+            width: 300px;
+            height: 53px;  
+            background-color:rgba(128, 128, 128, 0.388);
+          padding-left: 50px;
+          font-size: 20px;
+          border: none;
+          border-radius: 10px;
+        }
+        .df{
+             position:absolute;
+           margin-top: 141px;
+           margin-left: 533px;
+            width: 211px;
+            height: 53px;  
+            background-color:rgba(128, 128, 128, 0.388);
+          padding-left: 50px;
+          font-size: 20px;
+          border: none;
+          border-radius: 10px;
+        }
+        .cv{
+              position: absolute;
+           margin-top: 139px;
+           margin-left: 334px;
+            width: 177px;
+            height: 53px;  
+            background-color:rgba(128, 128, 128, 0.388);
+          padding-left: 50px;
+          font-size: 20px;
+          border: none;
+          border-radius: 10px;
+        }
+        #bn{
+            background-color:black;
+            color: white;
+            border: none;
+    height: 53px;
+    width: 113px;
+    border-radius: 9px;
+    position: absolute;
+      margin-left: 773px;
+    margin-top: 139px;
+        }
+        .p{
+            text-align: center;
+            margin-top: 256px;
+            font-weight: 200px;
+            font-size: 20px;
+
+        }
+        #tb{
+            background-color:black;
+            color: white;
+            border: none;
+            height: 29px;
+    width: 74px;
+    border-radius: 6px;
+    position: absolute;
+       margin-left: 511px;
+    margin-top: -22px;
+        }
+        .gv{
+            margin-top:325px ;
+            font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin-left: 150px;
+        
+        }
+        #card1{
+            border: 2px solid black;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+   margin-left: 47px;
+    margin-top: 89px;
+        background-color: rgba(219, 157, 157, 0.249);
+        }
+        #card2{
+            border: 2px solid black;
+            position: absolute;
+        width: 300px;
+    height: 150px;
+      margin-left: 392px;
+    margin-top: 90px;
+        }
+        #card3{
+             border: 2px solid black;
+             position: absolute;
+        width: 300px;
+    height: 150px;
+       margin-left: 737px;
+    margin-top: 295px;
+        }
+        #card4{
+             border: 2px solid black;
+             position: absolute;
+        width: 300px;
+    height: 150px;
+    margin-left: 737px;
+    margin-top: 90px
+  
+}
+#card5{
+     border: 2px solid black;
+     position: absolute;
+        width: 300px;
+         height: 150px;
+          margin-left: 392px;
+    margin-top: 294px;
+}
+
+#card6{
+     border: 2px solid black;
+     position: absolute;
+        width: 300px;
+        height: 150px;
+       margin-left: 47px;
+    margin-top: 294px;
+}
+
+#maincard{
+   width: 1184px;
+    height: 510px;
+    /* border: 5px solid black; */
+    position: absolute;
+       margin-toP: -49px;
+    margin-left: 91px;
+}
+.c1{
+   margin-top:10px ;
+   font-size: 20px;
+   margin-left: 10px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+#pic1{
+    margin-top: -42px;
+    margin-left: 199px;
+    height: 102px;
+    position: absolute;
+}
+.p{
+     margin-top:10px ;
+  font-size: 17px;
+  margin-left: -89px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ;
+   
+}
+.o{
+    
+    margin-top: 10px;
+       margin-top: 4px;
+    font-size: 17px;
+    margin-left: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ 
+    </style>
+
+
+</head>
+<body>
+
+    <!-- This is my header ---------------- -->
+
+    <header>
+
+        <nav>
+
+            <div id="main">
+
+                <h1 class="uber">Uber</h1>
+
+                <ul id="ul1">
+
+                    <li class="li1" ><a class="a1" href="Welcome.html">Ride</a></li>
+                    <li class="li1" ><a class="a1" href="">Drive</a></li>
+                    <li class="li1" ><a class="a1" href="">Business</a></li>
+                    <li class="li1" ><a class="a1" href="">About</a></li>
+                </ul>
+                <ul id="ul2">
+                    <li class="li1" ><a class="a1" href="">EN</a></li>
+                    <li class="li1" ><a class="a1" href="">help</a></li>
+                    <li class="li1" ><a class="a1" href="">Login in</a></li>
+                    <button id="bt"><b>sign up</b></button>
+
+               
+
+                    
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- This is my body content ----------------  -->
+
+    <section>
+        <div id="content">
+            <!-- <h1 id="io">Delhi NCR, IN Change city</h1> -->
+            <h1 id="go">Go anywhere with  Uber</h1>
+
+         
+            <!-- <p id="in"> pickup location</p>-->
+              <input class="on" type="text" placeholder="Pickup location" required>
+               <input class="as" type="text" placeholder="dropoff location" required>
+            <input class="df" type="date" placeholder="today" required>
+             <input class="cv" type="time" placeholder="now" required>
+              <button id="bn"><b>See price</b></button>
+
+                 <p class="p">Log in to see your recent activity</p>
+                  <button id="tb"><b>login in</b></button>
+
+
+
+        </div>
+
+
+    </section>
+
+    <section>
+
+        <div>
+            <h1 class="gv">
+                  suggestion
+            </h1>
+        </div>
+
+        <div id="maincard">
+            <!-- <h1>ride</h1> -->
+            <!-- <p>go anywhere with uber. request</p> -->
+
+            <div id="card1">
+           <h1 class="c1"> Ride</h1>
+            <p class="p">go anywhere with uber.</p>
+            <p class="o">request a ride hop in and go</p>
+
+            <img  id="pic1" src="image/top_bar_rides_3d.png" alt="">
+            </div>
+
+               <div id="card2">
+
+            </div>
+               <div id="card3">
+
+            </div>
+               <div id="card4">
+
+            </div>
+
+               <div id="card5">
+
+            </div>
+
+              <div id="card6">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- This is my footer ----------------  -->
+
+    <footer>
+
+        <div>
+
+            <!-- pass  -->
+
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>
+</body>
+</html>
